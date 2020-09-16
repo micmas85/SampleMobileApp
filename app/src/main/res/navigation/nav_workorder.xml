@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_workorder"
+    app:startDestination="@id/workorderFragment">
+
+    <fragment
+        android:id="@+id/workorderFragment"
+        android:name="pl.michalmaslak.samplemobileapp.ui.main.workorder.WorkOrderFragment"
+        android:label="@string/label_fragment_work_order"
+        tools:layout="@layout/fragment_workorder" >
+        <action
+            android:id="@+id/action_workorderFragment_to_viewWorkorderFragment"
+            app:destination="@id/viewWorkorderFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/viewWorkorderFragment"
+        android:name="pl.michalmaslak.samplemobileapp.ui.main.workorder.ViewWorkOrderFragment"
+        android:label="@string/label_fragment_view_work_order"
+        tools:layout="@layout/fragment_view_workorder" >
+        <action
+            android:id="@+id/action_viewWorkorderFragment_to_workorderFragment"
+            app:destination="@id/workorderFragment"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@+id/nav_workorder"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

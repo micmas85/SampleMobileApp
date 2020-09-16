@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_create_workorder"
+    app:startDestination="@id/createWorkorderFragment">
+
+    <fragment
+        android:id="@+id/createWorkorderFragment"
+        android:name="pl.michalmaslak.samplemobileapp.ui.main.create_workorder.CreateWorkOrderFragment"
+        android:label="@string/create_work_order"
+        tools:layout="@layout/fragment_create_workorder" />
+</navigation>
