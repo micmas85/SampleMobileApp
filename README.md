@@ -1,2 +1,11 @@
 # SampleMobileApp
- Sample Mobile App: MVI, Dagger, Room, Retrofit, RecyclerView, Navigation, Coroutines, Flow
+ Sample Mobile App
+ 
+ MVI Pattern,
+ Dagger,
+ Room,
+ Retrofit,
+ RecyclerView,
+ Navigation,
+ Coroutines,
+ Flow
